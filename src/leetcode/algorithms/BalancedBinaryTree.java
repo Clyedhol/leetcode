@@ -1,6 +1,7 @@
 package leetcode.algorithms;
 
 public class BalancedBinaryTree {
+	
 	 public boolean isBalanced(TreeNode root) {
 	        if(root == null) return true;
 	        int leftdep = maxDepth(root.left);
