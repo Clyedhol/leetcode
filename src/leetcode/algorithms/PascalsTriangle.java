@@ -6,6 +6,7 @@ import java.util.List;
 public class PascalsTriangle {
 	public List<List<Integer>> generate(int numRows) {
 		List<List<Integer>> numRowsList = new ArrayList<List<Integer>>();
+		if(numRows == 0){return numRowsList;}
 		int i = 0;
 		while(i < numRows){
 			List<Integer> numRowsListtemp = new ArrayList<Integer>();
@@ -22,6 +23,7 @@ public class PascalsTriangle {
 				numRowsListNow.add(numRowsListPre.get(j-1) + numRowsListPre.get(j));
 			}
 			numRowsListNow.add(1);
+			i++;
 		}
         return numRowsList;
     }
