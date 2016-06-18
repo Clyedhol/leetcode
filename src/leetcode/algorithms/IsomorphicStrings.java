@@ -1,8 +1,5 @@
 package leetcode.algorithms;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class IsomorphicStrings {
 	public boolean isIsomorphic(String s, String t) {
         char[] sforChar = s.toCharArray();
