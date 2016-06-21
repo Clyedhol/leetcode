@@ -10,9 +10,9 @@ public class ReverseBits {
     	n >>>= 1;
     	l++;
         while(l != 32){
+        	returnint <<= 1;
         	m = n & 1;
         	returnint = returnint ^ m;
-        	returnint <<= 1;
         	n >>>= 1;
         	l++;
         }
