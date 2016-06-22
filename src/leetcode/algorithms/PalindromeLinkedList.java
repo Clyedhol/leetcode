@@ -1,8 +1,5 @@
 package leetcode.algorithms;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class PalindromeLinkedList {public boolean isPalindrome(ListNode head) {
     if(head == null || head.next == null) return true;
     ListNode slow = head, fast = head;
